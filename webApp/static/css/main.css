@@ -17,11 +17,15 @@
 }
 
 /* muraoka*/
+/*top-page*/
 .row{margin-top:30px; }
 .searchwindow{border-radius:5px; width:200px; height:30px; }
 .subbtn{color:white; background-color:rgba(0,0,0,0.5);border-radius:5px; width:80px; height:30px; border-color: white; border-style: solid;}
 .row h2{text-align: center;}
 .navbar-info{color:#a9a9a9; margin-left:20px;margin-top:20px;position:absolute;}
+
+/*shop*/
+
 
 
 /* Autohide navbar */
