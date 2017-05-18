@@ -25,8 +25,18 @@
 .navbar-info{color:#a9a9a9; margin-left:20px;margin-top:20px;position:absolute;}
 
 /*shop*/
-
-
+.shop-page{text-align: center;}
+.shop-box{margin-top:30px; border-radius: 5px;border-color: #dcdcdc;border-width:1px;border-style: solid;margin-left: 220px;margin-right: 220px;box-shadow: 2px 2px 2px}
+.shop-image{margin-left:20px;margin-bottom:40px;background-color: #f6f6f6;border: 3px double #ccc;}
+.box{display:inline-block;}]
+.eva-title{display: inline-block;}
+.eva{display:inline-block;  border-radius: 5px;border-color: #dcdcdc;border-width:1px;border-style: solid;padding:30px;box-shadow: 2px 2px 2px;margin-right:10px;}
+.evat{display: inline-block;}
+.evat-image{margin-bottom:15px;}
+.revt{display: inline-block;}
+.revt-image{margin-bottom:15px;}
+.rev{ border-radius: 5px;border-color: #dcdcdc;border-width:1px;border-style: solid;box-shadow: 2px 2px 2px;margin-left: 250px;margin-right:250px;margin-top:20px;}
+.rev img{margin-top:10px;}
 
 /* Autohide navbar */
 .slideUp { top:-100px; }
