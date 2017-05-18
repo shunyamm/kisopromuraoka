@@ -20,13 +20,16 @@
 /*top-page*/
 .row{margin-top:30px; }
 .searchwindow{border-radius:5px; width:200px; height:30px; }
-.subbtn{color:white; background-color:rgba(0,0,0,0.5);border-radius:5px; width:80px; height:30px; border-color: white; border-style: solid;}
+.subbtn-index {color:white; background-color:rgba(0,0,0,0.5);border-radius:5px; width:80px; height:30px; border-color: white; border-style: solid;}
+.subbtn-index:hover{background-color:black}
 .row h2{text-align: center;}
 .navbar-info{color:#a9a9a9; margin-left:20px;margin-top:20px;position:absolute;}
 
 /*shop*/
+hr{	background-color: #fff;border-top: 2px dotted #8c8b8b;}
 .shop-page{text-align: center;}
 .shop-box{margin-top:30px; border-radius: 5px;border-color: #dcdcdc;border-width:1px;border-style: solid;margin-left: 220px;margin-right: 220px;box-shadow: 2px 2px 2px}
+.shop-text table{}
 .shop-image{margin-left:20px;margin-bottom:40px;background-color: #f6f6f6;border: 3px double #ccc;}
 .box{display:inline-block;}]
 .eva-title{display: inline-block;}
@@ -36,7 +39,13 @@
 .revt{display: inline-block;}
 .revt-image{margin-bottom:15px;}
 .rev{ border-radius: 5px;border-color: #dcdcdc;border-width:1px;border-style: solid;box-shadow: 2px 2px 2px;margin-left: 250px;margin-right:250px;margin-top:20px;}
-.rev img{margin-top:10px;}
+.rev img{margin-top:20px;}
+.retty-reviews{margin-bottom:50px;}
+
+/*result*/
+.result-search{margin-top:150px;}
+.subbtn-result {color:white; background-color:rgba(0,0,0,0.5);border-radius:5px; width:80px; height:30px; border-color: white; border-style: solid;}
+.subbtn-result:hover{background-color:#a9a9a9}
 
 /* Autohide navbar */
 .slideUp { top:-100px; }
