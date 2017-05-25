@@ -38,15 +38,6 @@
 				<ul class="nav navbar-nav pull-right">
 					<li class="active"><a href="#">Home</a></li>
 					<li><a href="about">About</a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">More Pages <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="sidebar-left">Left Sidebar</a></li>
-							<li class="active"><a href="sidebar-right">Right Sidebar</a></li>
-						</ul>
-					</li>
-					<li><a href="contact">Contact</a></li>
-					<li><a class="btn" href="signin">SIGN IN / SIGN UP</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div>
@@ -55,18 +46,50 @@
 
 	<div class="container">
 		<div class ="result-search">
-			<form action="result">
-				<input class="searchwindow" type="search" name="search"  placeholder="店名を入力" >
+			<form action="result" method="GET">
+				<input class="searchwindow" type="search" name="search"  value= '{{keyword}}' >
 				<input class="subbtn-result" type="submit" name="submit" value="検索">
 			</form>
 		</div>
 		<div class="results">
 			<div class="indresult">
-				<p>店名</p>
-				<p>写真</p>
-				<p>口コミ</p>
-				<p>☆☆☆☆☆</p>
-				<p>料金</p>
+                
+                <div class="guru">
+            <h1>ぐるなび</h1>
+                <p>{{all1}}</p>
+  
+                {% for p in range(num) %}
+                {% if p == 2 or p == 4 %}
+                <p><a href = "{{shop_list1[p]}}">{{shop_list1[p]}}</a></p>
+                {% else %}
+                <p>{{ shop_list1[p] }}</p>
+                {% endif %}
+                {% endfor %}
+                    
+                </div>
+                
+                <div class="hot">
+                
+            <h1>hotpepperグルメ</h1>
+                <p>{{all2}}</p>
+
+                {% for num in shop_list %}
+                <p>{{ num }}</p>
+                {% endfor %}
+                </div>
+                
+                <div class="tabe">
+
+           <h1>食べログ</h1>
+                <p>{{all3}}</p>
+                
+                {% for q in shop_list3 %}
+                <p>{{ q }}</p>
+                {% endfor %}
+                    
+                </div>
+
+                
 			</div>
 		</div>
 	</div>
@@ -96,37 +119,6 @@
 			<div class="container">
 				<div class="row">
 
-					<div class="col-md-3 widget">
-						<h3 class="widget-title">Contact</h3>
-						<div class="widget-body">
-							<p>+234 23 9873237<br>
-								<a href="mailto:#">some.email@somewhere.com</a><br>
-								<br>
-								234 Hidden Pond Road, Ashland City, TN 37015
-							</p>
-						</div>
-					</div>
-
-					<div class="col-md-3 widget">
-						<h3 class="widget-title">Follow me</h3>
-						<div class="widget-body">
-							<p class="follow-me-icons">
-								<a href=""><i class="fa fa-twitter fa-2"></i></a>
-								<a href=""><i class="fa fa-dribbble fa-2"></i></a>
-								<a href=""><i class="fa fa-github fa-2"></i></a>
-								<a href=""><i class="fa fa-facebook fa-2"></i></a>
-							</p>
-						</div>
-					</div>
-
-					<div class="col-md-6 widget">
-						<h3 class="widget-title">Text widget</h3>
-						<div class="widget-body">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, dolores, quibusdam architecto voluptatem amet fugiat nesciunt placeat provident cumque accusamus itaque voluptate modi quidem dolore optio velit hic iusto vero praesentium repellat commodi ad id expedita cupiditate repellendus possimus unde?</p>
-							<p>Eius consequatur nihil quibusdam! Laborum, rerum, quis, inventore ipsa autem repellat provident assumenda labore soluta minima alias temporibus facere distinctio quas adipisci nam sunt explicabo officia tenetur at ea quos doloribus dolorum voluptate reprehenderit architecto sint libero illo et hic.</p>
-						</div>
-					</div>
-
 				</div> <!-- /row of widgets -->
 			</div>
 		</div>
@@ -137,20 +129,8 @@
 
 					<div class="col-md-6 widget">
 						<div class="widget-body">
-							<p class="simplenav">
-								<a href="#">Home</a> |
-								<a href="/about">About</a> |
-								<a href="sidebar-right">Sidebar</a> |
-								<a href="contact">Contact</a> |
-								<b><a href="signup">Sign up</a></b>
-							</p>
-						</div>
-					</div>
-
-					<div class="col-md-6 widget">
-						<div class="widget-body">
 							<p class="text-right">
-								Copyright &copy; 2014, Your name. Designed by <a href="http://gettemplate.com/" rel="designer">gettemplate</a>
+								Copyright &copy; 2017, KisoPro 
 							</p>
 						</div>
 					</div>
